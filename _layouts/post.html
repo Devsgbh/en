@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+{% include header.html %}
+
+    <div class="e-cards deck centered">
+        {% for post in site.posts limit: 4 %}
+            <h1 class="">{{post.title}}</h1>
+        {% endfor %}
+    </div>
+
+{% include footer.html %}
