@@ -4,9 +4,12 @@ description:
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description."
 
+# theme config
+primary_color: success
+second_color: gray
+
 # Build settings
-version: "V0.2.9"
 markdown: kramdown
 url: "https://devsgbh.github.io/en/"
 permalink: pretty
-exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
+exclude: ['node_modules', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
