@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+{% include header.html %}
+
+<div class="e-container mt-1">
+    <div class="e-cols">
+        <div class="e-col-8">
+            {{ content }}
+        </div>
+        <div class="e-col-4">
+            {% include contributor.html %}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

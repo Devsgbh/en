@@ -1,0 +1,18 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} |{% endif %} {{site.title}} : {{site.subtitle}}</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="GBH">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+
+    <!-- Links -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/efrolic@0.2.9/dist/css/efrolic.min.css">
+</head>
