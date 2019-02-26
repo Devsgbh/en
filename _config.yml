@@ -6,10 +6,10 @@ description:
 
 # theme config
 primary_color: success
-second_color: gray
+second_color: dark
 
 # Build settings
 markdown: kramdown
-url: "https://devsgbh.github.io/en/"
+url: "https://devsgbh.github.io/en"
 permalink: pretty
 exclude: ['node_modules', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
