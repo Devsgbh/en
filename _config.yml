@@ -1,15 +1,24 @@
-title: "Your awesome title"
-description:
-  "Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description."
-
-# theme config
+---
+title: Your awesome title
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 primary_color: success
 second_color: dark
-
-# Build settings
 markdown: kramdown
-url: "https://devsgbh.github.io/en"
+url: https://devsgbh.github.io/en
 permalink: pretty
-exclude: ['node_modules', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
+exclude:
+- node_modules
+- package-lock.json
+- Gemfile
+- Gemfile.lock
+- feed.xml
