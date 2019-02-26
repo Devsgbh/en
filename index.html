@@ -6,22 +6,19 @@ title: "Components"
 description: "site description."
 ---
 
-
-    <div class="e-cols no-gap">
-        {% for post in site.posts %}
-            <div class="e-col-12 mb-3">
-                <article class="e-note {{post.color}}">
-                    <div class="note-header">
-                        <a href="{{site.url}}{{post.url}}">{{ post.title }}</a>
-                        <small>{{ post.date | date_to_string }}</small>
-                    </div>
-                    <div class="note-body">
-                        <a href="{{site.url}}{{post.url}}">{{ post.excerpt }}</a>
-                    </div>
-                    <div class="note-footer">
-                        <a href="{{site.url}}{{post.url}}" class="e-btn small {{post.color}}">Read more</a>
-                    </div>
-                </article>
+    {% for post in site.posts %}
+        <div class="e-card mb-3">
+            <div class="card-body">
+            <h3 class="card-title"><a class="text-{{site.primary_color}}" href="{{site.url}}{{post.url}}">{{
+        post.title }}</a></h3>
+                <p class="card-text">
+                    <a class="text-gray" href="{{site.url}}{{post.url}}">{{ post.excerpt }}</a>
+                    <small>{{ post.date | date_to_string }}</small>
+                </p>
+                <div class="e-buttons align-end">
+                    <a href="{{site.url}}{{post.url}}" class="e-btn {{site.second_color}}">Read more</a>
+                </div>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
+
